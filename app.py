@@ -251,7 +251,7 @@ st.caption("Pemandu Langkah Interaktif")
 
 with st.sidebar:
     st.header("Masukan")
-    n = int(st.number_input("Jumlah variabel (n)", min_value=1, max_value=8, value=2, step=1))
+    n = int(st.number_input("Jumlah variabel (n)", min_value=1, max_value=15, value=2, step=1))
     m = int(st.number_input("Jumlah kendala (m)", min_value=1, max_value=8, value=3, step=1))
     mode = st.radio("Tampilan angka", ["Pecahan", "Desimal"], horizontal=True)
 sx.DECIMAL = mode == "Desimal"
